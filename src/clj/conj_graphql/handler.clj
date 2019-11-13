@@ -8,7 +8,7 @@
 (def mount-target
   [:div#app
    [:h2 "Welcome to conj-graphql"]
-   [:p "please wait while Figwheel is waking up ..."]
+   [:p "please wait while Figwheel/shadow-cljs is waking up ..."]
    [:p "(Check the js console for hints if nothing exciting happens.)"]])
 
 (defn head []
@@ -23,7 +23,8 @@
    (head)
    [:body {:class "body-container"}
     mount-target
-    (include-js "/js/app.js")]))
+    (include-js "/js/app.js")
+    [:script "conj-graphql.core.init_BANG_()"]]))
 
 
 (defn cards-page []

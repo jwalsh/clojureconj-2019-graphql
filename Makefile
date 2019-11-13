@@ -18,3 +18,5 @@ circle:
 
 release:
 	lein do clean, uberjar
+	npm install
+	shadow-cljs release app

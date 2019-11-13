@@ -1,0 +1,9 @@
+{:lein         true
+ :source-paths ["src"]
+ :builds       {:app {:target     :browser
+                      :output-dir "resources/public/js"
+                      :asset-path "/js"
+                      :modules    {:app {:entries [conj-graphql.core]}}
+                      :devtools   {:after-load conj-graphql.core/mount-root}}}
+ :dev-http     {3000 {:root    "resources/public"
+                      :handler conj-graphql.handler/app}}}
