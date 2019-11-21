@@ -1,0 +1,12 @@
+{
+  "projects": {
+    "pokemon": {
+      "schemaPath": "pokemon.schema.graphql",
+      "extensions": {
+        "endpoints": {
+          "default": "https://graphql-pokemon.now.sh/?"
+        }
+      }
+    }
+  }
+}

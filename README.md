@@ -31,6 +31,18 @@ and stopped by running:
 (stop-server)
 ```
 
+## Cider
+
+``` elisp
+(cider)
+```
+
+## GraphQL
+
+``` shell
+graphql get-schema -p pokemon -e default
+```
+
 ## Running the tests
 
 ```
