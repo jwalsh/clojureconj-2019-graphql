@@ -31,6 +31,23 @@ and stopped by running:
 (stop-server)
 ```
 
+### ~/.clojure/deps.edn
+
+``` edn
+{
+ :aliases
+ {
+  :clj-kondo
+  {:extra-deps {clj-kondo {:mvn/version "RELEASE"}}
+   :main-opts ["-m" "clj-kondo.main"]}
+  :graph
+  {:deps {org.clojure/tools.deps.graph {:mvn/versionn "0.1.14"}}
+   :main-opts ["-m" "clojure.tools.deps.graph"]}
+  }
+ }
+
+```
+
 ## Cider
 
 ``` elisp
